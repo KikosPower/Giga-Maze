@@ -1,9 +1,11 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="placement.css">
+    <script src="gameData.js"></script>
+    <script src="renderEngine.js"></script>
   </head>
   <body>
-    <div id="playerScreen">
+    <div id="playerScreen" onclick="backgroundUpdate()">
       <canvas id="background"></canvas>
       <canvas id="objects"></canvas>
       <canvas id="player"></canvas>
