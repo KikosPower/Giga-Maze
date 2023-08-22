@@ -46,3 +46,28 @@ var playerData = {
     hp: []
   }
 };
+
+function mapLoad(type) {
+  var mapX = playerData.location.global[0];
+  if (mapX < 0) {
+    mapX = "mapX_" + (mapX * -1);
+  } else {
+    mapX = "mapX" + mapX;
+  }
+  var mapY = playerData.location.global[1];
+  if (mapY < 0) {
+    mapY = "mapY_" + (mapY * -1);
+  } else {
+    mapY = "mapY" + mapY;
+  }
+  var output = mapData[mapX][mapY];
+  switch(type) {
+    case 0:
+      output = output.area;
+      break;
+    case 1:
+      output = output.wall;
+      break;
+  }
+  return output;
+}
