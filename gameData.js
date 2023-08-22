@@ -53,11 +53,15 @@ var playerData = {
     hp: [],
     charger: [],
     scan: []
-  },
-  meta: {
-    warpLock: false
   }
 };
+
+var metaData = {
+  warpLock: false,
+  timeLimit: 0
+}
+
+//Data Access Functions
 
 function mapLoad(type) {
   var mapX = playerData.location.global[0];
