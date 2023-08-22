@@ -12,11 +12,11 @@ function unlock(type, id, timer) {
       }
       playerData.locks.timed[x] = true;
       if (timer > 0) {
-        playerData.meta.warpLock = true;
-        playerData.meta.timeLimit = setTimeout(warp(), timer);
+        metaData.warpLock = true;
+        metaDAta.timeLimit = setTimeout(warp(), timer);
       } else {
-        clearTimeout(timeLimit);
-        playerData.meta.warpLock = false;
+        clearTimeout(metaData.timeLimit);
+        metaData.warpLock = false;
       }
       break;
     case "s":
