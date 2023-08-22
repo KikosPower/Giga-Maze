@@ -5,14 +5,15 @@ var mapData = {
     mapY0: {
       area: false,
       wall: {
-        localX: [0],
-        localY: [0],
-        width: [50],
-        height: [50]
+        localX: [0, 0],
+        localY: [0, 668],
+        width: [100, 100],
+        height: [100, 100]
       },
       door: false,
       item: false,
       locks: false,
+      lights: false,
       cannon: false,
       teleport: {
         localX: [],
@@ -43,7 +44,9 @@ var playerData = {
   items: {
     power: [],
     dash: [],
-    hp: []
+    hp: [],
+    charger: [],
+    scan: []
   }
 };
 
