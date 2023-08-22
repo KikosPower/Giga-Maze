@@ -3,6 +3,7 @@
 var mapData = {
   mapX0: {
     mapY0: {
+      mode: 0,
       area: false,
       wall: {
         localX: [0, 0, 0, 150],
@@ -20,11 +21,8 @@ var mapData = {
         localY: [],
         id: []
       },
-      teleport: {
-        localX: [],
-        localY: [],
-        type: [1]
-      }
+      teleport: false,
+      savepoint: [683, 384, 1]
     }
   }
 };
