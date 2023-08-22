@@ -5,10 +5,10 @@ var mapData = {
     mapY0: {
       area: false,
       wall: {
-        localX: [],
-        localY: [],
-        width: [],
-        height: []
+        localX: [0],
+        localY: [0],
+        width: [50],
+        height: [50]
       },
       door: false,
       item: false,
@@ -27,16 +27,13 @@ var mapData = {
 
 var playerData = {
   location: {
-    localX: 45,
-    localY: 45,
-    globalX: 0,
-    globalY: 0,
-    velocityX: 0,
-    velocityY: 0
+    local: [683, 384],
+    global: [0, 0],
+    velocity: [0, 0]
   },
   stats: {
     power: 1000,
-    hp: 3,
+    hp: 3
   },
   locks: {
     normal: [],
