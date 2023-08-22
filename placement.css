@@ -1,3 +1,15 @@
 body {
   margin: 0;
 }
+
+#playerScreen {
+  position: relative;
+  width: 1366px;
+  height: 768px;
+}
+
+canvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
