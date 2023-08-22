@@ -34,6 +34,7 @@ var mapData = {
 var playerData = {
   location: {
     local: [683, 384],
+    warp: [0, 0],
     global: [0, 0],
     velocity: [0, 0]
   },
@@ -52,6 +53,9 @@ var playerData = {
     hp: [],
     charger: [],
     scan: []
+  },
+  meta: {
+    warpLock: false
   }
 };
 
