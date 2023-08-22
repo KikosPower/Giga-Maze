@@ -15,6 +15,11 @@ var mapData = {
       locks: false,
       lights: false,
       cannon: false,
+      hidden: {
+        localX: [],
+        localY: [],
+        id: []
+      },
       teleport: {
         localX: [],
         localY: [],
@@ -70,6 +75,15 @@ function mapLoad(type) {
       break;
     case 1:
       output = output.wall;
+      break;
+    case 2:
+      output = output.door;
+      break;
+    case 3:
+      output = output.item;
+      break;
+    case 4:
+      output = output.locks;
       break;
   }
   return output;
