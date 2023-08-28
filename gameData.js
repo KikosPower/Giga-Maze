@@ -63,13 +63,13 @@ var metaData = {
 //Data Access Functions
 
 function mapLoad(type) {
-  var mapX = playerData.location.global[0];
+  var mapX = playerData.location.map[0];
   if (mapX < 0) {
     mapX = "mapX_" + (mapX * -1);
   } else {
     mapX = "mapX" + mapX;
   }
-  var mapY = playerData.location.global[1];
+  var mapY = playerData.location.map[1];
   if (mapY < 0) {
     mapY = "mapY_" + (mapY * -1);
   } else {
