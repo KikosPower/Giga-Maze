@@ -56,6 +56,7 @@ var playerData = {
 };
 
 var metaData = {
+  programRun: false,
   warpLock: false,
   timeLimit: 0
 }
