@@ -1,4 +1,4 @@
-GIGA MAzE Version 0.0.0
+GIGA MAZE Version 0.0.0
 
 Currently in Alpha development
 
