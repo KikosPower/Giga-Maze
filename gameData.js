@@ -22,7 +22,7 @@ var mapData = {
         id: []
       },
       teleport: false,
-      savepoint: [683, 384, 1]
+      savepoint: [683, 384, 0]
     }
   }
 };
