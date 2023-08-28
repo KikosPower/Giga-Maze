@@ -32,6 +32,7 @@ var mapData = {
 var playerData = {
   location: {
     local: [683, 384],
+    map: [0, 0],
     warp: [0, 0],
     global: [0, 0],
     velocity: [0, 0]
