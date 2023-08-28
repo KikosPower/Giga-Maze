@@ -1,5 +1,3 @@
-
-
 function unlock(type, id, timer) {
   switch (type) {
     case "n":
@@ -29,4 +27,8 @@ function unlock(type, id, timer) {
       }
       break;
   }
+}
+
+function warp() {
+  metaData.warpLock = false;
 }
