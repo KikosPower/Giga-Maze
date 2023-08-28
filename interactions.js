@@ -30,5 +30,6 @@ function unlock(type, id, timer) {
 }
 
 function warp() {
+  transition(.location.warp[0], .location.warp[1], .location.global[0], .location.global[1], 1)
   metaData.warpLock = false;
 }
