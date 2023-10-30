@@ -23,6 +23,29 @@ var mapData = {
       },
       teleport: false,
       savepoint: [683, 384, 0]
+    },
+    mapY_1: {
+			mode: 0,
+			area: false,
+			wall: {
+				localX: [],
+				localY: [],
+				width: [],
+				height: []
+			},
+			door: {
+				localX: [],
+				localY: [],
+				width: [],
+				height: [],
+			},
+			item: false,
+			locks: false,
+			lights: false,
+			cannon: false,
+			hidden: false,
+			teleport: false,
+			savepoint: false
     }
   }
 };
