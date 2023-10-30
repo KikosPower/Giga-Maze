@@ -2,7 +2,7 @@ var lastSave = 0;
 
 function fileCheck() {
   if (localStorage.getItem("file") == null) {
-    console.log("New Game");
+    document.getElementByID("startScreen").display = "block";
   } else {
     console.log("Continue");
   }
