@@ -1,10 +1,10 @@
 var lastSave = 0;
 
 function fileCheck() {
-  if (localStorage.file) {
-    console.log("Continue");
-  } else {
+  if (localStorage.getItem("file") == null) {
     console.log("New Game");
+  } else {
+    console.log("Continue");
   }
 }
 
