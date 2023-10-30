@@ -1,11 +1,11 @@
 var lastSave = 0;
 
 function fileCheck() {
-  localStorage.setItem("default", 0);
+  save("default");
   if (localStorage.getItem("file") == null) {
     document.getElementById("startScreen").style.display = "block";
   } else {
-    lastSave = localStorage.getItem("file")
+    lastSave = localStorage.getItem("file");
     load(lastSave);
   }
 }
@@ -14,6 +14,8 @@ function save(file) {
   if (metaData.warpLock == false) {
     var saveData = JSON.stringify(playerData);
     localStorage.setItem("save" + file, saveData);
+    localStorage.setItem("file", file);
+    lastSave = file;
   }
 }
 
@@ -21,7 +23,8 @@ function load(file) {
   if (metaData.warpLock == false) {
     var saveData = localStorage.getItem("save" + file);
     saveData = JSON.parse(saveData);
-    objectCopy()
+    objectCopy(saveData, playerData);
+    save(file);
   }
 }
 
