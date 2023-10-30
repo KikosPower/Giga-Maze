@@ -32,7 +32,7 @@ function backgroundUpdate() {
           }
           break;
       }
-      if (lockCheck == false) {
+      if (lockCheck == false || lockCheck == undefined) {
         ctx.fillRect(mapDraw.localX[x], mapDraw.localY[x], mapDraw.width[x], mapDraw.height[x]);
       }
     }
