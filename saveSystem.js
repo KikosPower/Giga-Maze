@@ -31,12 +31,12 @@ function newGame() {
 }
 
 function objectCopy(source, target) {
-  var keys = Object.keys(source);
-  for (var x = 0; x < keys.length; x++) {
-    if (typeof source[keys[x]] == "object") {
-      objectCopy(source[keys[x]], target[keys[x]])
+  for (let x in source) {
+    if (typeof source[x] == "object") {
+      target[x] = {};
+      objectCopy(source[x], target[x]);
     } else {
-      target[keys[x]] = source[keys[x]];
+      target[x] = source[x];
     }
   }
 }
