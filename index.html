@@ -5,11 +5,12 @@
     <script src="gameData.js"></script>
     <script src="renderEngine.js"></script>
     <script src="engineDrive.js"></script>
+    <script src="saveSystem.js"></script>
     <title>Giga Maze</title>
   </head>
   <body>
     <div id="startScreen"></div>
-    <div id="playerScreen" onclick="backgroundUpdate()">
+    <div id="playerScreen" onload="fileCheck()">
       <canvas id="background" width="1366" height="768"></canvas>
       <canvas id="objects" width="1366" height="768"></canvas>
       <canvas id="player" width="1366" height="768"></canvas>
