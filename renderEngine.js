@@ -10,6 +10,10 @@ function backgroundUpdate() {
       ctx.fillRect(mapDraw.localX[x], mapDraw.localY[x], mapDraw.width[x], mapDraw.height[x]);
     }
   }
+}
+function objectUpdate() {
+  var canvas = document.getElementById("objects");
+  var ctx = canvas.getContext("2d");
   mapDraw = mapLoad(2);
   if (mapDraw != false) {
     for (var x = 0; x < mapDraw.localX.length; x++) {
