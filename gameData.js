@@ -77,13 +77,29 @@ var playerData = {
     hp: [],
     charger: [],
     scan: []
+  },
+  controls: {
+    up: "KeyW",
+    left: "KeyA",
+    down: "KeyS",
+    right: "KeyD",
+    interact: "KeyQ",
+    dash: "ShiftRight"
   }
 };
 
 var metaData = {
   programRun: false,
   warpLock: false,
-  timeLimit: 0
+  timeLimit: 0,
+  input: {
+    up: false,
+    left: false,
+    down: false,
+    right: false,
+    interact: false,
+    dash: false
+  }
 }
 
 //Data Access Functions
