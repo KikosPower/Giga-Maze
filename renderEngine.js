@@ -13,15 +13,27 @@ function backgroundUpdate() {
   mapDraw = mapLoad(2);
   if (mapDraw != false) {
     for (var x = 0; x < mapDraw.localX.length; x++) {
+      var lockCheck = playerData.locks;
       switch (mapDraw.type[x]) {
         case 0:
+          ctx.fillStyle = "#ff0000";
+          lockCheck = lockCheck.normal[mapDraw.id[x]];
           break;
         case 1:
+          lockCheck = lockCheck.timed[mapDraw.id[x]];
           break;
         case 2:
+          if (mapDraw.id[x] == 0) {
+            ctx.fillStyle = "#";
+            lockCheck = lockCheck.swap;
+          } else {
+            ctx.fillStyle = "#";
+            lockCheck = !lockCheck.swap;
+          }
           break;
-        case 3:
-          break;
+      }
+      if (lockCheck == false) {
+        ctx.fillRect(mapDraw.localX[x], mapDraw.localY[x], mapDraw.width[x], mapDraw.height[x]);
       }
     }
   }
