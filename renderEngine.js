@@ -11,6 +11,7 @@ function backgroundUpdate() {
     }
   }
 }
+
 function objectUpdate() {
   var canvas = document.getElementById("objects");
   var ctx = canvas.getContext("2d");
