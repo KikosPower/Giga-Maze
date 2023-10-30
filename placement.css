@@ -8,7 +8,7 @@ body {
   height: 768px;
 }
 
-canvas {
+.playerScreen {
   position: absolute;
   top: 0px;
   left: 0px;
