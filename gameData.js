@@ -34,12 +34,12 @@ var mapData = {
         height: [334, 50, 50]
       },
       door: {
-        localX: [],
-        localY: [],
-        width: [],
-        height: [],
-        type: [],
-        id: []
+        localX: [0],
+        localY: [334],
+        width: [40],
+        height: [100],
+        type: [0],
+        id: [0]
       },
       item: false,
       locks: false,
