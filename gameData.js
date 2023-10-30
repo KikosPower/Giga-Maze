@@ -25,27 +25,29 @@ var mapData = {
       savepoint: [683, 384, 0]
     },
     mapY_1: {
-			mode: 0,
-			area: false,
-			wall: {
-				localX: [],
-				localY: [],
-				width: [],
-				height: []
-			},
-			door: {
-				localX: [],
-				localY: [],
-				width: [],
-				height: [],
-			},
-			item: false,
-			locks: false,
-			lights: false,
-			cannon: false,
-			hidden: false,
-			teleport: false,
-			savepoint: false
+      mode: 0,
+      area: false,
+      wall: {
+        localX: [0, 0, 150],
+        localY: [0, 0, 0],
+        width: [40, 100, 483],
+        height: [334, 50, 50]
+      },
+      door: {
+        localX: [],
+        localY: [],
+        width: [],
+        height: [],
+        type: [],
+        id: []
+      },
+      item: false,
+      locks: false,
+      lights: false,
+      cannon: false,
+      hidden: false,
+      teleport: false,
+      savepoint: false
     }
   }
 };
