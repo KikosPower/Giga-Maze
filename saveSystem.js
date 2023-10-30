@@ -18,10 +18,25 @@ function save(file) {
 }
 
 function load(file) {
-  var saveData = localStorage.getItem("save" + file);
+  if (metaData.warpLock == false) {
+    var saveData = localStorage.getItem("save" + file);
+    saveData = JSON.parse(saveData);
+    objectCopy()
+  }
 }
 
 function newGame() {
   load("default");
   document.getElementById("startScreen").style.display = "none";
+}
+
+function objectCopy(source, target) {
+  var keys = Object.keys(source);
+  for (var x = 0; x < keys.length; x++) {
+    if (typeof source[keys[x]] == "object") {
+      objectCopy(source[keys[x]], target[keys[x]])
+    } else {
+      target[keys[x]] = source[keys[x]];
+    }
+  }
 }
