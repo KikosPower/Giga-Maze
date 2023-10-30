@@ -6,10 +6,10 @@ var mapData = {
       mode: 0,
       area: false,
       wall: {
-        localX: [0, 0, 0, 150],
-        localY: [0, 150, 668, 0],
-        width: [100, 200, 100, 200],
-        height: [100, 468, 100, 768]
+        localX: [0, 0, 0, 150, 400],
+        localY: [0, 150, 668, 0, 0],
+        width: [100, 200, 100, 250, 100],
+        height: [100, 468, 100, 768, 150]
       },
       door: false,
       item: false,
