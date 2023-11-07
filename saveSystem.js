@@ -7,6 +7,7 @@ function fileCheck() {
   } else {
     lastSave = localStorage.getItem("file");
     load(lastSave);
+    metaData.programRun = true;
   }
 }
 
