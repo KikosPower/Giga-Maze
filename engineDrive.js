@@ -1,7 +1,13 @@
-/*function engineRun() {
+function engineRun() {
   if (metaData.programRun.main) {
+    if (metaData.programRun.transition) {
+      //code goes here
+    } else {
+      //code goes here
+    }
+    metaData.frame.animation = (metaData.frame.animation + 1)%10;
   }
-}*/
+}
 
 document.onkeydown = function(e) {
   switch (e.code) {
