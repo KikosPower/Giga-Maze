@@ -9,7 +9,7 @@ function fileCheck() {
     load(lastSave);
     metaData.programRun = true;
   }
-  metaData.runtimeId.main = setInterval(, 25);
+  metaData.runtimeId.main = setInterval(engineRun, 25);
 }
 
 function save(file) {
