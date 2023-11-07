@@ -13,7 +13,7 @@ function unlock(type, id, timer) {
       playerData.locks.timed[x] = true;
       if (timer > 0) {
         metaData.warpLock = true;
-        metaDAta.timeLimit = setTimeout(warp(), timer);
+        metaData.timeLimit = setTimeout(warp(), timer);
       } else {
         clearTimeout(metaData.timeLimit);
         metaData.warpLock = false;
