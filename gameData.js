@@ -92,6 +92,9 @@ var metaData = {
   programRun: false,
   warpLock: false,
   timeLimit: 0,
+  frame: {
+    animation: 0
+  },
   input: {
     up: false,
     left: false,
