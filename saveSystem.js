@@ -7,7 +7,7 @@ function fileCheck() {
   } else {
     lastSave = localStorage.getItem("file");
     load(lastSave);
-    metaData.programRun = true;
+    metaData.programRun.main = true;
   }
   metaData.runtimeId.main = setInterval(engineRun, 25);
 }
