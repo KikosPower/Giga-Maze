@@ -1,8 +1,8 @@
 var lastSave = 0;
 
 function fileCheck() {
-  save("default");
   if (localStorage.getItem("file") == null) {
+    save("default");
     document.getElementById("startScreen").style.display = "block";
   } else {
     lastSave = localStorage.getItem("file");
