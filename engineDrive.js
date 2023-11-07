@@ -1,5 +1,5 @@
 /*function engineRun() {
-  if (metaData.programRun) {
+  if (metaData.programRun.main) {
   }
 }*/
 
