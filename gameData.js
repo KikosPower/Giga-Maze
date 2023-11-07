@@ -95,6 +95,10 @@ var metaData = {
   frame: {
     animation: 0
   },
+  runtimeId: {
+    main: 0,
+    warp: 0
+  },
   input: {
     up: false,
     left: false,
