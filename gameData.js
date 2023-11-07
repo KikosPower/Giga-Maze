@@ -89,9 +89,12 @@ var playerData = {
 };
 
 var metaData = {
-  programRun: false,
   warpLock: false,
   timeLimit: 0,
+  programRun: {
+    main: false,
+    transition: false
+  },
   frame: {
     animation: 0
   },
