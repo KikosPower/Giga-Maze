@@ -1,7 +1,7 @@
 var lastSave = 0;
 
 function fileCheck() {
-  if (localStorage.getItem("file") == null) {
+  if (localStorage.getItem("file") == null || localStorage.getItem("file") == 'default') {
     save("default");
     document.getElementById("startScreen").style.display = "block";
   } else {
