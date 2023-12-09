@@ -1,4 +1,20 @@
 //Static Data
+/*
+Variable explanationg for mapData
+mapXn: holds data for room at global x position n.
+mapYn: holds data for room at global y position n.
+mode: indicates the challenge mode for a room.
+area:
+wall: indicates the size and placement of walls.
+door: indicates the size, placement, and type for doors
+item:
+locks:
+lights:
+cannon:
+hidden:
+teleport:
+savepoint:
+*/
 
 var mapData = {
   mapX0: {
