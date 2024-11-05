@@ -2,4 +2,15 @@ body {
   margin: 0;
 }
 
-#gameScreen {}
+#playerScreen {
+  position: relative;
+  width: 1440px;
+  height: 810px;
+  display: block;
+}
+
+.gameScreen {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
