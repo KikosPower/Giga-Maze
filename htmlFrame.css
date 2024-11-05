@@ -8,6 +8,7 @@ body {
   height: 810px;
   display: block;
   border: 2px solid black;
+  margin: 25px auto;
 }
 
 .gameScreen {
