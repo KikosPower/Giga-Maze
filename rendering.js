@@ -7,10 +7,17 @@ function backgroundDraw() {
   //Starts drawing the walls
   ctx.fillStyle = "#000000";
   coord = fakeMap.wall;
-  ctx.beginPath();
+  var newPath = true;
   for(let c in coord) {
-    if (coord[c] == "end") {
-      ctx.closePath();
+    if (newPath) {
+      ctx.beginPath();
+      ctx.moveTo(coord[c][0], coord[c][1]);
+      newPath = false;
+    } else if (coord[c] == "end") {
+      ctx.fill();
+      newPath = true;
+    } else {
+      ctx.lineTo(coord[c][0], coord[c][1]);
     }
   }
 }
