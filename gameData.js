@@ -2,4 +2,10 @@
 
 var collisionData = {};
 
-var backgroundData = {};
+var backgroundData = {
+  mapX0: {
+    mapY0: {
+      wall: [ [0,0], "end"]
+    }
+  }
+};
