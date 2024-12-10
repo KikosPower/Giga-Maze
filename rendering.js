@@ -2,8 +2,7 @@ function backgroundDraw() {
   //Loads the canvas, and paints the default background color.
   var canvas = document.getElementById("background");
   var ctx = canvas.getContext("2d");
-  ctx.fillStyle = "#777777";
-  ctx.fillRect(0, 0, 1440, 810);
+  ctx.clearRect(0, 0, 1440, 810);
   //Starts drawing the walls
   ctx.fillStyle = "#000000";
   coord = fakeMap.wall;
