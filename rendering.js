@@ -13,6 +13,7 @@ function backgroundDraw() {
       ctx.moveTo(coord[c][0], coord[c][1]);
       newPath = false;
     } else if (coord[c] == "end") {
+      ctx.closePath();
       ctx.fill();
       newPath = true;
     } else {
