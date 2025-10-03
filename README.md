@@ -3,7 +3,8 @@ On my own.
 Yeah, I've got a bunch of stuff that will have to be done.
 
 ToDo list:
-- Set up theme system
+- Set up theme system (maybe)
+- Make menus
 - Actually make the game itself
 - Create mini challenges in main world
 
