@@ -25,5 +25,5 @@ function backgroundDraw() {
 //Development data file
 //don't make it into a coconut
 var fakeMap = {
-  wall: [ ]
+  wall: [ [0,0], [200,0], [200,200], [0,200], "end" ]
 };
