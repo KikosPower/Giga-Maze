@@ -22,6 +22,14 @@ function backgroundDraw() {
   }
 }
 
+function playerDraw() {
+  var canvas = document.getElementById("playground");
+  var ctx = canvas.getContext("2d");
+  ctx.clearRect(0, 0, 1440, 810);
+  ctx.fillStyle = "#f0f";
+  ctx.fillRect(metaData.playerLocation.x - 20, metaData.playerLocation.y - 20, 40, 40);
+}
+
 //Development data file
 //don't make it into a coconut
 var fakeMap = {

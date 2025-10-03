@@ -2,6 +2,7 @@
 
 //Detects when a key gets pressed.
 document.onkeydown = function(e) {
+  console.log(e);
   switch (e.code) {
     case playerData.controls.up:
       metaData.input.up = true;
@@ -34,7 +35,7 @@ document.onkeyup = function(e) {
       metaData.input.down = false;
       break;
     case playerData.controls.left:
-      metaData.input.left = true;
+      metaData.input.left = false;
       break;
     case playerData.controls.right:
       metaData.input.right = false;
